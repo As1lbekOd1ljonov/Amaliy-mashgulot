@@ -177,7 +177,7 @@ class Ticket:
     def __generate_random_date():
         """Tasodifiy sotish sanasini generatsiya qilish."""
         start_date = datetime.now()
-        random_days = random.randint(1, 30)  # Keyingi 30 kun ichidagi sanalar
+        random_days = random.randint(1, 30)
         random_date = start_date + timedelta(days=random_days)
         return random_date.strftime("%Y-%m-%d")
     def show_ticket_info(self):
