@@ -76,7 +76,7 @@ class TransactionDescriptor:
 
     def __set__(self, instance, value):
         try:
-            value = Decimal(value).quantize(Decimal("0.01"))  # Ikkita o‘nlik xona
+            value = Decimal(value).quantize(Decimal("0.01"))  
         except InvalidOperation:
             raise ValueError("Tranzaksiya summasi Decimal formatda bo‘lishi kerak.")
 
